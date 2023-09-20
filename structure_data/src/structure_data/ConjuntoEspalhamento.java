@@ -1,11 +1,14 @@
-//um hash é uma função matemática que transforma uma sequência de dados de tamanho arbitrário 
+//Um hash é uma função que transforma uma sequência de dados de tamanho que voce escolheu 
 //em uma sequência de dados de tamanho fixo. Essa sequência de dados de tamanho fixo é chamada de 
 //valor hash ou código hash.
 
-//--Identificação de dados: Um hash pode ser usado para identificar um conjunto de dados de forma única. Por exemplo, um hash pode ser usado para identificar um arquivo ou uma mensagem.
+//--Identificação de dados: Um hash pode ser usado para identificar um conjunto de dados de forma única. 
+//Por exemplo, um hash pode ser usado para identificar um arquivo ou uma mensagem.
+
 //--Verificação de integridade: Um hash pode ser usado para verificar se um conjunto de dados foi alterado. 
 //Se o hash do conjunto de dados 
 //original for diferente do hash do conjunto de dados modificado, então o conjunto de dados foi alterado.
+
 //--Criptografia: Um hash pode ser usado para gerar uma chave criptográfica.
 
 package structure_data;
@@ -44,6 +47,8 @@ public class ConjuntoEspalhamento {
 		for (int i = 0; i < palavra.length(); i++) {
 			codigo = 31 * codigo + palavra.charAt(i);
 		}
+		//Abaixo é o hashcode que permite de forma rapida a identificação e recuperação de objetos
+		//em estrutura de dados
 		return codigo;
 	}
 	
